@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather+Sans:wght@300;400;500;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 11px;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+a, h1, h2, h3, p, button, span{
+  line-height: 1.2;
+  font-weight: 1;
+  font-size: 1rem;
+}
