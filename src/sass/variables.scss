@@ -1,12 +1,109 @@
-
 $abril-font-family: 'Abril Fatface', cursive;
+
+$min-width: 800px;
+$small-width: 960px;
+$medium-width: 1200px;
+$large-width: 1300px;
+$main-padding: 8px;
+
+$color-1: #202630;
+$color-2: #543f32;
+$color-3: #eee9d4;
+$color-4: #1b1f29;
+$color-5: #121214;
+$color-6: #b6b6c229;
+$color-7: #faf6ea;
+$color-8: #888b92;
+$color-9: #bbbbc2;
+$color-10: #eeeef5;
+$color-11: #ced0d4;
+$color-12: #a0b0cc;
+$border-color: #543f32;
+$cubic-bazier: cubic-bezier(.2,.47,.54,.93);
+$j:#e4b69a;
+
+$main-color: rgb(65, 65, 65);
+
+$magin-bottom-1: 20px;
+$magin-bottom-2: 30px;
+$magin-bottom-3: 40px;
+$magin-bottom-4: 50px;
+
+$nav-li-margin: 20px;
+$nav-transition-time: 0.15s;
+$nav-color: white;
+$nav-bcg-color: rgba(0, 0, 0, 0.698);
+$nav-height: 66px;
+$nav-mobile-bcg-color: #121214;
+
+$ham-width: 32px;
+$ham-height: 17px;
+$ham-item-height: 2px;
+$ham-item-color: rgb(108, 108, 108);
+$ham-item-color-active: white;
+$ham-transition-time: 0.2s;
+$ham-transform-px: 18px;
+$ham-margin-top: 26px;
+$ham-margin-right: 30px;
 
 $header-name-s-fs: 5.4rem;
 $header-title-s-fs: 4rem;
 $header-subtitle-s-fs: 1.4rem;
 $header-subtitle-s-ls: 6px;
+$header-curtain-color: rgba(27, 24, 28, 0.686);
 
 $header-name-l-fs: 7rem;
 $header-title-l-fs: 5.2rem;
 $header-subtitle-l-fs: 1.8rem;
 $header-subtitle-l-ls: 7.9px;
+
+$font-size-s: 1.2rem;
+$font-size-xsm: 1.3rem;
+$font-size-sm: 1.5rem;
+$font-size-m: 2rem;
+$font-size-l: 2.6rem;
+$font-size-xl: 3rem;
+$font-size-xxl: 3.8rem;
+$font-size-xxxl: 4.6rem;
+
+$skill-transition-time: 0.4s;
+$skill-percentage-height: 8px;
+$skill-percentage-height-l: 11px;
+
+$contact-icon-width-s: 20px;
+$contact-icon-width-m: 26px;
+$contact-icon-width-l: 28px;
+$contact-icon-width-xl: 31px;
+
+$project-bcg-color: rgba(255, 255, 255, 0.707);
+
+@mixin header-title {
+    position: relative;
+    text-align: center;
+    font-size: 4.4rem;
+    margin-bottom: $magin-bottom-3;
+    font-family: $abril-font-family;
+    font-weight: 500;
+    transform: translateX(-140px);
+    opacity: 0;
+    transition: 0.3s 0.1s $cubic-bazier;
+
+    @media(min-width: $medium-width){
+      font-size: 5rem;
+    }
+}
+
+@mixin header-title-active{
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+@keyframes percentage {
+  from{
+    transform: translateX(-100%);
+  }
+
+to{
+    transform: translateX(0);
+  }
+}

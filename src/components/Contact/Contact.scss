@@ -1,0 +1,151 @@
+@import '../../sass/variables.scss';
+
+.contact{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // justify-content: center;
+  padding: 120px $main-padding;
+  background-color: $color-4;
+  overflow: hidden;
+
+  &__title{
+    @include header-title;
+    margin-bottom: $magin-bottom-4;
+    color: white;
+
+    &--active{
+      @include header-title-active;
+    }
+  }
+
+  &__main-wrapper{
+      width: 96%;
+      padding: 60px 0;
+      border: 4px solid $border-color;
+      border-radius: 15px;
+      overflow: hidden;
+      background-color: $color-4;
+      
+      max-width: $min-width;
+      @media(min-width: $min-width){
+        padding: 80px;
+        width: 80%;
+    }
+  }
+
+  &__wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__line{
+    height: 1px;
+    width: 90%;
+    max-width: 350px;
+    margin: 15px auto;
+    background-color: lighten($color-1, 15%);
+  }
+
+  &__text{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-size: $font-size-m;
+    font-weight: 800;
+    color: $color-8;
+    opacity: 0;
+    transition: color 0.2s, transform 0.3s 0.19s $cubic-bazier, opacity 0.3s 0.19s $cubic-bazier;
+
+    &:nth-child(1){
+      transform: translateY(50px);
+    }
+
+    &:nth-child(2){
+      transform: translateY(50px);
+      transition: color 0.2s, transform 0.3s 0.31s $cubic-bazier, opacity 0.3s 0.31s $cubic-bazier;
+    }
+
+    &--active:nth-child(1){
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    &--active:nth-child(2){
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    @media(min-width: $min-width){
+      font-size: $font-size-l;
+    }
+
+    &:hover{
+      color: $color-9;
+    }
+
+    &:hover > .contact__icon{
+      filter: invert(94%) sepia(5%) saturate(244%) hue-rotate(201deg) brightness(82%) contrast(84%);
+    }
+  }
+
+  &__icon{
+    width: $contact-icon-width-m;
+    margin: 12px 6px;
+    filter: invert(58%) sepia(5%) saturate(393%) hue-rotate(184deg) brightness(94%) contrast(82%);
+    transition: 0.2s;
+
+    @media(min-width: $min-width){
+      width: $contact-icon-width-xl;
+      margin: 14px 8px;
+    }
+  }
+
+  &__icons{
+    position: relative;
+    width: 100%;
+    max-width: 220px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
+    padding-top: 26px;
+    border-top: 2px solid $border-color;
+    z-index: 1;
+    background-color: $color-4;
+
+    @media(min-width: $min-width){
+      border-top: 3px solid $border-color;
+    }
+  }
+
+  &__social-media-icon{
+    width: 35px;
+    filter: invert(58%) sepia(5%) saturate(393%) hue-rotate(184deg) brightness(94%) contrast(82%);
+    transition: background-color 0.2s;
+    transform: scale(0);
+
+    &--active-1{
+      animation: scale 0.3s 0.5s forwards;
+    }
+
+    &--active-2{
+      animation: scale 0.3s 0.6s forwards;
+    }
+
+    &--active-3{
+      animation: scale 0.3s 0.7s forwards;
+    }
+
+    &:hover{
+      filter: invert(94%) sepia(5%) saturate(244%) hue-rotate(201deg) brightness(82%) contrast(84%);
+    }
+  }
+}
+
+@keyframes scale{
+  from{transform: scale(0)}
+  to{transform: scale(1)}
+}

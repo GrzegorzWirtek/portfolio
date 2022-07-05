@@ -1,0 +1,151 @@
+@import '../../sass/variables.scss';
+
+.projects{
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 120px $main-padding;
+  background-color: $color-6;
+
+  &__title{
+    @include header-title;
+    margin-bottom: $magin-bottom-4;
+    color: white;
+
+    &--active{
+      @include header-title-active;
+    }
+  }
+
+  &__wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 350px;
+
+    @media(min-width: $min-width){
+      max-width: 790px;
+      justify-content: space-evenly;
+    }
+
+    @media(min-width: $medium-width){
+      max-width: $medium-width;
+      justify-content: space-evenly;
+    }
+  }
+
+  .project{
+    position: relative;
+    -webkit-box-shadow: 6px 6px 15px -4px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 6px 6px 15px -4px rgba(0, 0, 0, 1);
+    box-shadow: 6px 6px 15px -4px rgba(0, 0, 0, 1);
+    margin: 20px 0;
+    overflow: hidden;
+    transform: translateY(90px);
+    opacity: 0;
+    transition: $skill-transition-time $cubic-bazier;
+
+    &--delay-1{
+      @media(max-width: $min-width){
+        transition: $skill-transition-time 0.25s $cubic-bazier;
+      }
+    }
+
+    &--delay-2{
+      @media(min-width: $min-width){
+        transition: $skill-transition-time 0.25s $cubic-bazier;
+      }
+    }
+
+    &--active{
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    &__image{
+      max-width: 100%;
+      max-height: 100%;
+      transition: $skill-transition-time;
+      vertical-align: middle;
+    }
+
+    &__curtain{
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: $project-bcg-color;
+      height: 100%;
+      width: 100%;
+      padding: 60px 5px 30px 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: 0.8s;
+      user-select: none;
+      z-index: 1;
+
+      @media(min-width: $medium-width){
+        padding: 90px 15px 60px 15px;
+      }
+    }
+
+    &__title{
+      font-size: $font-size-m;
+      text-align: center;
+      font-weight: 800;
+      line-height: 1.2;
+      margin-top: auto;
+
+      @media(min-width: $medium-width){
+        font-size: $font-size-l;
+      }
+    }
+
+    &__tech{
+      margin: 6px auto;
+      text-align: center;
+      line-height: 1.5;font-size: $font-size-s;
+
+      @media(min-width: $medium-width){
+        font-size: $font-size-sm;
+      }
+    }
+
+    &__href{
+      text-align: center;
+      font-weight: 600;
+      font-size: $font-size-s;
+      color: white;
+      text-decoration: none;
+      border: 2px solid white;
+      background-color: black;
+      padding: 7px 10px;
+      transition: 0.2s;
+      margin-top: auto;
+
+      &:hover{
+        background-color: lighten(black, 15%);
+      }
+
+      @media(min-width: $medium-width){
+        font-size: $font-size-sm;
+      }
+    }
+
+    &:hover > .project__curtain{
+      opacity: 1;
+    }
+
+    &:hover > .project__image{
+      transform: scale(1.04);
+      filter: blur(3px);
+    }
+  }
+}
+

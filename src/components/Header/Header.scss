@@ -2,7 +2,6 @@
 
 //Video by Marian Croitoru: https://www.pexels.com/video/overview-of-a-building-and-its-parking-area-5607784/ pexels-marian-croitoru-5607784.mp4
 
-
 .header{
   position: fixed;
   top: 0;
@@ -12,6 +11,7 @@
   display: flex;
   flex-wrap: wrap;
   overflow: hidden;
+  user-select: none;
 
   &::after{
     display: block;
@@ -21,7 +21,12 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(27, 24, 28, 0.686);
+    background-color: $color-5;
+    transition: background-color 1.6s;
+  }
+
+  &--active::after{
+    background-color: $header-curtain-color;
   }
 
   &__video{
