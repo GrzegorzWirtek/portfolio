@@ -13,7 +13,6 @@ const Header: React.FC<{ textVisible: boolean }> = ({ textVisible }) => {
 				src='pexels-marian-croitoru-5607784.mp4'
 				className='header__video'
 				onLoadedData={() => setLoaded(true)}></video>
-			{/* <img src='temporary.png' alt='' /> */}
 			{textVisible ? (
 				<section className='header__name-wrapper'>
 					<h1 className='header__name'>Grzegorz</h1>

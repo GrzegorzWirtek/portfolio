@@ -59,7 +59,7 @@
     cursor: pointer;
 
     &:hover{
-      color: lighten($color-2, 40%);
+      color: lighten($color-5, 50%);
     }
 
     &:nth-child(1){
@@ -75,29 +75,4 @@
       font-size: $font-size-s;
     }
   }
-
-  // &__icons{
-  //   width: 60%;
-  //   max-width: 200px;
-  //   margin: 0 auto;
-  //   height: 35px;
-  //   text-align: center;
-
-  //   &::before{
-  //     display: block;
-  //     content: '';
-  //     height: 1px;
-  //     margin: 10px auto 20px auto;
-  //     background-color: $border-color;
-  //   }
-
-  //   @media (min-width: $min-width){
-  //     display: none;
-  //   }
-  // }
-
-  // &__icon{
-  //   height: 100%;
-  //   margin: 0 9px;
-  // }
 }

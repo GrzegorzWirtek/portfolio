@@ -1,7 +1,6 @@
 import './About.scss';
 import { useInView } from 'react-intersection-observer';
 
-// const REF_OPTIONS = { triggerOnce: true };
 const REF_OPTIONS = {};
 
 const About = () => {

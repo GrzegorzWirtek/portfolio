@@ -30,7 +30,6 @@ const ICONS = [
 	'mongo',
 ];
 
-// const REF_OPTIONS = { triggerOnce: true };
 const REF_OPTIONS = {};
 
 const Skills = () => {
