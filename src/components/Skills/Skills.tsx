@@ -3,31 +3,37 @@ import { useInView } from 'react-intersection-observer';
 const SKILLS = [
 	'HTML',
 	'CSS',
+	'Sass',
+	'BEM',
 	'JavaScript',
 	'React.js',
 	'TypeScript',
-	'Sass',
+	'Redux',
 	'Npm',
 	'Node.js',
+	'MongoDB',
+	'Axios',
 	'Webpack',
 	'Git',
-	'BEM',
-	'MongoDB',
+	'VSC',
 ];
 
 const ICONS = [
 	'html',
 	'css',
+	'sass',
+	'bem',
 	'js',
 	'react',
 	'ts',
-	'sass',
+	'redux',
 	'npm',
 	'node',
+	'mongo',
+	'axios',
 	'webpack',
 	'git',
-	'bem',
-	'mongo',
+	'vsc',
 ];
 
 const REF_OPTIONS = {};

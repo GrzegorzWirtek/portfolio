@@ -21,17 +21,17 @@ const About = () => {
 					Programowaniem zainteresowałem się z ciekawości, szukając przestrzeni
 					do samorealizacji. Pomyślałem, że w czasach, gdy komputery odgrywają
 					tak ważną rolę, warto wiedzieć w jaki sposób działają. Zacząłem od
-					języka C++ i - ku własnemu zaskoczeniu - znalazłem w pisaniu kodu
+					języka C++ i (ku własnemu zaskoczeniu) znalazłem w pisaniu kodu
 					niezwykłą satysfakcję. Następnym krokiem było wybranie drogi dalszego
-					rozwoju - wybór padł na frontend. <br />
-					Moja młodość była połączeniem dwóch światów - wielu pasji (muzyka, gra
-					na gitarze, komponowanie, obróbka dźwięku, fotografia, psychologia) i
-					pracy zarobkowej (posada w korporacji zajmującej się moniotorowaniem
-					rynku farmaceutycznego). Obie te role ukształtowały we mnie
-					zamiłowanie do twórczego, kreatywnego działania, z metodyczną,
-					codzienną pracą, w której liczy się niezawodność, solidność i
+					rozwoju, wybór padł na frontend. <br />
+					Moja młodość była połączeniem dwóch światów - różnych pasji i
+					zainteresowań (muzyka, gra na gitarze, komponowanie, obróbka dźwięku,
+					fotografia, psychologia) i pracy zarobkowej (posada w korporacji
+					zajmującej się moniotorowaniem rynku farmaceutycznego). Obie te role
+					ukształtowały we mnie zamiłowanie do twórczego działania, z gotowością
+					do metodycznej pracy, w której liczy się niezawodność, solidność i
 					zaufanie. Ostatnie trzy lata spędziłem na codziennej nauce po
-					godzinach pracy. Wbrew pozorom nie był to dla mnie wielki wysiłek -
+					godzinach pracy. Wbrew pozorom nie był to dla mnie wielki wysiłek, bo
 					pisanie stron sprawia mi wielką frajdę, a pokonywanie
 					programistycznych problemów i nieustanna potrzeba podnoszenia
 					kompetencji - satysfakcję. Wierzę, że znajdę przestrzeń, w której będę

@@ -1,9 +1,10 @@
 $abril-font-family: 'Abril Fatface', cursive;
 
 $min-width: 800px;
-$small-width: 960px;
+$min-width-about: 560px;
+$small-width: 1000px;
 $medium-width: 1200px;
-$large-width: 1300px;
+$large-width: 1270px;
 $main-padding: 8px;
 
 $color-1: #202630;
@@ -89,7 +90,7 @@ $project-bcg-color: rgba(255, 255, 255, 0.707);
     opacity: 0;
     transition: 0.3s 0.1s $cubic-bazier;
 
-    @media(min-width: $medium-width){
+    @media(min-width: $min-width){
       font-size: 5rem;
     }
 }
