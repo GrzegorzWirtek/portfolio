@@ -28,6 +28,7 @@
     width: 100vw;
     margin-right: 0;
     list-style: none;
+    transition: transform $nav-transition-time;
 
     @media (min-width: $min-width){
       position: relative;
@@ -35,7 +36,7 @@
       width: auto;
       margin-right: 40px;
       flex-direction: row;
-      transform: translateY(0);
+      transform: translatex(0);
     }
   }
 
@@ -43,9 +44,9 @@
     @media (max-width: $min-width){
       position: fixed;
       padding-top: 100px;
-      transition: transform $nav-transition-time;
       transform: translateX(0);
       background-color: $nav-mobile-bcg-color;
+      transition: transform $nav-transition-time;
     }
   }
 

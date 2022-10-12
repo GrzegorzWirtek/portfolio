@@ -1,0 +1,12 @@
+.project{
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.233);
+  padding: 50px;
+  color: white;
+  transition: 0.2s;
+  transform: translateX(-150px);
+
+  &--active{
+    transform: translateX(0);
+  }
+}

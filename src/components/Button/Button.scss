@@ -1,0 +1,17 @@
+@import '../../sass/variables.scss';
+
+.btn{
+  padding: $btn-padding;
+  font-size: $btn-font-size;
+  font-weight: $btn-font-weight;
+  color: $btn-color;
+  background-color: $btn-bcg-color;
+  outline: none;
+  border: $btn-border;
+  cursor: pointer;
+  transition: background-color $btn-transition-time;
+
+  &:hover{
+    background-color: $btn-bcg-color-hover;
+  }
+}

@@ -1,0 +1,44 @@
+import './Project.scss';
+import Button from '../../Button/Button';
+import { ProjectType } from './ProjectAssets';
+
+import { useInView } from 'react-intersection-observer';
+
+const REF_OPTIONS = { triggerOnce: true };
+const SIZE_LARGE = '800px';
+
+const Project: React.FC<ProjectType> = ({
+	title,
+	subtitle,
+	description,
+	imgUrl,
+	pageUrl,
+}) => {
+	const [project, inViewProject] = useInView(REF_OPTIONS);
+
+	const handleGoToPage = () => {
+		window.open(pageUrl, '_blank');
+	};
+
+	return (
+		<div
+			className={`project ${inViewProject ? 'project--active' : ''}`}
+			ref={project}>
+			<div className='project__text-wrapper'>
+				<h3 className='project__title'>{title}</h3>
+				<p className='project__subtitle'>{subtitle}</p>
+				<p className='project__description'>{description}</p>
+			</div>
+			<picture className='project__img-wrapper'>
+				<source media={`(min-width: ${SIZE_LARGE})`} srcSet={`${imgUrl}.png`} />
+				<img
+					src={`${imgUrl}-min.png`}
+					alt='Projekt TV series'
+					className='project__image'
+				/>
+				<Button handleClick={handleGoToPage}>Odwiedź stronę</Button>
+			</picture>
+		</div>
+	);
+};
+export default Project;
