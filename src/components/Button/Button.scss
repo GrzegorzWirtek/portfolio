@@ -2,14 +2,25 @@
 
 .btn{
   padding: $btn-padding;
-  font-size: $btn-font-size;
+  margin: 10px;
+  font-size: $font-size-sm;
   font-weight: $btn-font-weight;
+  height: 43px;
   color: $btn-color;
   background-color: $btn-bcg-color;
+  width: 100%;
   outline: none;
   border: $btn-border;
   cursor: pointer;
   transition: background-color $btn-transition-time;
+
+  @media (min-width: 400px){
+    max-width: $project-btn-max-width;
+  }
+
+  @media (min-width: 550px){
+    flex-basis: 40%;
+  }
 
   &:hover{
     background-color: $btn-bcg-color-hover;

@@ -4,8 +4,9 @@ import { ProjectType } from './ProjectAssets';
 
 import { useInView } from 'react-intersection-observer';
 
-const REF_OPTIONS = { triggerOnce: true };
-const SIZE_LARGE = '800px';
+// const REF_OPTIONS = { triggerOnce: true };
+const REF_OPTIONS = {};
+const SIZE_LARGE = '500px';
 
 const Project: React.FC<ProjectType> = ({
 	title,
@@ -13,11 +14,16 @@ const Project: React.FC<ProjectType> = ({
 	description,
 	imgUrl,
 	pageUrl,
+	githubUrl,
 }) => {
 	const [project, inViewProject] = useInView(REF_OPTIONS);
 
 	const handleGoToPage = () => {
 		window.open(pageUrl, '_blank');
+	};
+
+	const handleGoToGithub = () => {
+		window.open(githubUrl, '_blank');
 	};
 
 	return (
@@ -34,9 +40,11 @@ const Project: React.FC<ProjectType> = ({
 				<img
 					src={`${imgUrl}-min.png`}
 					alt='Projekt TV series'
-					className='project__image'
+					className='project__img'
+					onClick={handleGoToPage}
 				/>
 				<Button handleClick={handleGoToPage}>Odwiedź stronę</Button>
+				<Button handleClick={handleGoToGithub}>Projekt GitHub</Button>
 			</picture>
 		</div>
 	);

@@ -63,6 +63,7 @@ $font-size-xsm: 1.3rem;
 $font-size-sm: 1.5rem;
 $font-size-m: 1.7rem;
 $font-size-xm: 1.9rem;
+$font-size-sl: 2.2rem;
 $font-size-l: 2.6rem;
 $font-size-xl: 3rem;
 $font-size-xxl: 3.8rem;
@@ -77,15 +78,23 @@ $contact-icon-width-m: 26px;
 $contact-icon-width-l: 28px;
 $contact-icon-width-xl: 31px;
 
-$project-bcg-color: rgba(255, 255, 255, 0.707);
+$project-line-color: rgba(255, 255, 255, 0.689);
+$projects-bcg-color: rgba(20, 20, 20, 0.696);
+$project-margin-bottom: 40px;
+$project-margin-bottom-l: 60px;
+$project-subtitle-color: rgba(255, 255, 255, 0.759);
+$project-text-margin-bottom: 15px;
+$project-btn-max-width: 260px;
+$project-width-l: 500px;
+$project-img-max-width: 650px;
+$project-left-right-padding: 15px;
 
 $btn-padding: 10px 26px;
 $btn-border: 2px solid white;
-$btn-font-size: 14px;
 $btn-font-weight: 600;
 $btn-color: white;
 $btn-bcg-color: transparent;
-$btn-bcg-color-hover: rgba(0, 0, 0, 0.172);
+$btn-bcg-color-hover: rgba(0, 0, 0, 0.508);
 $btn-transition-time: 0.2s;
 
 @mixin header-title {

@@ -1,12 +1,90 @@
+@import '../../../sass/variables.scss';
+
 .project{
-  position: relative;
-  background-color: rgba(255, 255, 255, 0.233);
-  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 90%;
+  max-width: 1200px;
+  padding: $project-margin-bottom 0;
+  margin-bottom: $project-margin-bottom; 
+  border-top: 1px solid $project-line-color;
+  transform: translateX(-140px);
+  opacity: 0;
+  transition: 0.3s 0.1s $cubic-bazier;
   color: white;
-  transition: 0.2s;
-  transform: translateX(-150px);
 
   &--active{
+    opacity: 1;
     transform: translateX(0);
+  }
+
+  @media(min-width: $small-width){
+    padding: $project-margin-bottom-l 0;
+  }
+
+  &__text-wrapper{
+    @media(min-width: $small-width){
+      order: 2;
+      flex-basis: 50%;
+      padding-left: $project-left-right-padding;
+    }
+  }
+
+  &__title{
+    max-width: $project-img-max-width;
+    margin-bottom: $project-text-margin-bottom;
+    font-size: $font-size-sl;
+    font-weight: 600;
+    text-align: center;
+
+    @media(min-width: $small-width){
+      text-align: left;
+    }
+  }
+
+  &__subtitle{
+    max-width: $project-img-max-width;
+    margin-bottom: $project-text-margin-bottom;
+    font-size: $font-size-sm;
+    text-align: center;
+    color: $color-8;
+
+    @media(min-width: $small-width){
+      text-align: left;
+    }
+  }
+
+  &__description{
+    max-width: $project-img-max-width;
+    margin-bottom: $project-text-margin-bottom;
+    font-size: $font-size-sm;
+    font-weight: 300;
+    line-height: 1.4;
+    letter-spacing: 1px;
+  }
+
+
+  &__img-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+
+    @media(min-width: $small-width){
+      flex-basis: 50%;
+      padding-right: $project-left-right-padding;
+    }
+  }
+
+  &__img{
+    width: 100%;
+    max-width: $project-img-max-width;
+    margin-bottom: $project-text-margin-bottom;
+    cursor: pointer;
+
+    @media(min-width: $small-width){
+      margin-bottom: $project-text-margin-bottom * 2;
+    }
   }
 }
