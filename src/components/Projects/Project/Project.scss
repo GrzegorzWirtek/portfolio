@@ -4,6 +4,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: flex-start;
   width: 90%;
   max-width: 1200px;
   padding: $project-margin-bottom 0;
@@ -21,6 +22,7 @@
 
   @media(min-width: $small-width){
     padding: $project-margin-bottom-l 0;
+    margin-top: 10px;
   }
 
   &__text-wrapper{

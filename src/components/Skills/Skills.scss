@@ -144,12 +144,12 @@
 .skill--active{
   &:nth-child(1)> .skill__percentage::after{
     animation: percentage $skill-transition-time 0.32s forwards;
-    right: 10%;
+    right: 15%;
   }
 
   &:nth-child(2)> .skill__percentage::after{
     animation: percentage $skill-transition-time 0.43s forwards;
-    right: 10%;
+    right: 15%;
   }
 
   &:nth-child(3)> .skill__percentage::after{
@@ -164,11 +164,11 @@
 
   &:nth-child(5)> .skill__percentage::after{
     animation: percentage $skill-transition-time 0.5s forwards;
-        right: 30%;
+        right: 35%;
   }
   &:nth-child(6)> .skill__percentage::after{
     animation: percentage $skill-transition-time 0.46s forwards;
-        right: 30%;
+        right: 38%;
   }
   &:nth-child(7)> .skill__percentage::after{
     animation: percentage $skill-transition-time 0.62s forwards;
@@ -176,27 +176,27 @@
   }
   &:nth-child(8)> .skill__percentage::after{
     animation: percentage $skill-transition-time 0.7s forwards;
-        right: 45%;
+        right: 55%;
   }
   &:nth-child(9)> .skill__percentage::after{
     animation: percentage $skill-transition-time 0.76s forwards;
-        right: 40%;
+        right: 65%;
   }
   &:nth-child(10)> .skill__percentage::after{
     animation: percentage $skill-transition-time 0.28s forwards;
-        right: 50%;
+        right: 55%;
   }
   &:nth-child(11)> .skill__percentage::after{
     animation: percentage $skill-transition-time 0.5s forwards;
-        right: 40%;
+        right: 45%;
   }
   &:nth-child(12)> .skill__percentage::after{
     animation: percentage $skill-transition-time 0.42s forwards;
-        right:30%;
+        right:40%;
   }
   &:nth-child(13)> .skill__percentage::after{
     animation: percentage $skill-transition-time 0.52s forwards;
-        right:50%;
+        right:60%;
   }
   &:nth-child(14)> .skill__percentage::after{
     animation: percentage $skill-transition-time 0.3s forwards;
@@ -204,6 +204,6 @@
   }
   &:nth-child(15)> .skill__percentage::after{
     animation: percentage $skill-transition-time 0.40s forwards;
-        right:15%;
+        right:18%;
   }
 }

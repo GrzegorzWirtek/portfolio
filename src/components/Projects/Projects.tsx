@@ -2,7 +2,7 @@ import './Projects.scss';
 import { useInView } from 'react-intersection-observer';
 import { useEffect } from 'react';
 import Project from './Project/Project';
-import { PROJECT_ASSETS } from './Project/ProjectAssets';
+import { PROJECTS_ASSETS } from './ProjectsAssets';
 
 // const REF_OPTIONS = { triggerOnce: true };
 const REF_OPTIONS = {};
@@ -17,7 +17,7 @@ const Projects: React.FC<{
 		setHeaderText(!inViewProjects);
 	}, [inViewProjects, setHeaderText]);
 
-	const projectList = PROJECT_ASSETS.map(
+	const projectList = PROJECTS_ASSETS.map(
 		({ title, subtitle, description, imgUrl, pageUrl, githubUrl }) => (
 			<Project
 				key={title}

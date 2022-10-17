@@ -1,6 +1,6 @@
 import './Project.scss';
 import Button from '../../Button/Button';
-import { ProjectType } from './ProjectAssets';
+import { ProjectType } from '../ProjectsAssets';
 
 import { useInView } from 'react-intersection-observer';
 

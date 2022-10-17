@@ -18,25 +18,24 @@ const About = () => {
 					className={`about__image ${inView ? 'about__image--active' : ''}`}
 				/>
 				<p className={`about__text ${inView ? 'about__text--active' : ''}`}>
-					Programowaniem zainteresowałem się z ciekawości, szukając przestrzeni
-					do samorealizacji. Pomyślałem, że w czasach, gdy komputery odgrywają
-					tak ważną rolę, warto wiedzieć w jaki sposób działają. Zacząłem od
-					języka C++ i (ku własnemu zaskoczeniu) znalazłem w pisaniu kodu
-					niezwykłą satysfakcję. Następnym krokiem było wybranie drogi dalszego
-					rozwoju, wybór padł na frontend. <br />
-					Moja młodość była połączeniem dwóch światów - różnych pasji i
-					zainteresowań (muzyka, gra na gitarze, komponowanie, obróbka dźwięku,
-					fotografia, psychologia) i pracy zarobkowej (posada w korporacji
-					zajmującej się moniotorowaniem rynku farmaceutycznego). Obie te role
-					ukształtowały we mnie zamiłowanie do twórczego działania, z gotowością
-					do metodycznej pracy, w której liczy się niezawodność, solidność i
-					zaufanie. Ostatnie trzy lata spędziłem na codziennej nauce po
-					godzinach pracy. Wbrew pozorom nie był to dla mnie wielki wysiłek, bo
-					pisanie stron sprawia mi wielką frajdę, a pokonywanie
-					programistycznych problemów i nieustanna potrzeba podnoszenia
-					kompetencji - satysfakcję. Wierzę, że znajdę przestrzeń, w której będę
-					mógł w pełni poświęcić się tworzeniu stron, zarabiać na tym i stawać
-					się w swoim fachu coraz lepszym.
+					Tworzenia stron uczę się od ponad dwóch lat. Wcześniej przez kilka
+					miesięcy poznawałem język C++. Uczę się samodzielnie korzystając z
+					kursów na Udemy (m.in. Samuraj Programowania, Maxymilian
+					Schwarzmuller) i YouTube (m.in. Mirosław Zelent, Codevolution), ze
+					stron takich jak stackoverflow.com, developer.mozilla.org,
+					w3schools.com, oraz z wielu rozmaitych blogów i artykułów dostępnych w
+					sieci. Stawiam na naukę przez praktykę, dlatego nowo zdobytą wiedzę
+					utrwalam tworząc, w ramach ćwiczeń, większe lub mniejsze aplikacje –
+					mam ich na koncie dziesiątki. Niewielką część projektów zamieściłem na
+					moim koncie na GitHub - dokumentują one moje postępy w nauce i
+					odzwierciedlają poziom umiejętności, na którym znajdowałem się podczas
+					ich tworzenia. Obecnie moim priorytetem jest nauka pisania czystego
+					kodu, zdobywanie i wprowadzanie dobrych praktyk programistycznych,
+					dobre opanowanie TypeScript używanego z React.js, oraz umiejętność
+					tworzenia przejrzystej i dobrze rozplanowanej architektury w większych
+					projektach. Docelowo chcę dobrze zrozumieć zagadnienia i technologie,
+					które pozwolą mi tworzyć wydajne, bezpieczne, dobrze napisane i
+					spełniające oczekiwania odbiorców strony i aplikacje webowe.
 				</p>
 			</div>
 		</section>
