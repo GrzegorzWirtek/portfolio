@@ -1,40 +1,6 @@
 import './Skills.scss';
 import { useInView } from 'react-intersection-observer';
-const SKILLS = [
-	'HTML',
-	'CSS',
-	'Sass',
-	'BEM',
-	'JavaScript',
-	'React.js',
-	'TypeScript',
-	'Redux',
-	'Npm',
-	'Node.js',
-	'MongoDB',
-	'Axios',
-	'Webpack',
-	'Git',
-	'VSC',
-];
-
-const ICONS = [
-	'html',
-	'css',
-	'sass',
-	'bem',
-	'js',
-	'react',
-	'ts',
-	'redux',
-	'npm',
-	'node',
-	'mongo',
-	'axios',
-	'webpack',
-	'git',
-	'vsc',
-];
+import { ICONS, SKILLS } from './SkillsAssets';
 
 const REF_OPTIONS = {};
 
