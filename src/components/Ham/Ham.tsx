@@ -1,9 +1,8 @@
 import './Ham.scss';
 
-const Ham: React.FC<{ click: () => void; navVisible: boolean }> = ({
-	click,
-	navVisible,
-}) => {
+type HamProps = { click: () => void; navVisible: boolean };
+
+const Ham = ({ click, navVisible }: HamProps) => {
 	return (
 		<div className='ham' onClick={click}>
 			<div

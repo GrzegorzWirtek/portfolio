@@ -1,11 +1,11 @@
 import './Button.scss';
 
-type Props = {
+type ButtonProps = {
 	children: string;
 	handleClick: () => void;
 };
 
-const Button: React.FC<Props> = ({ children, handleClick }) => {
+const Button = ({ children, handleClick }: ButtonProps) => {
 	return (
 		<button onClick={handleClick} className='btn'>
 			{children}

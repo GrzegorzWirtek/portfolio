@@ -7,9 +7,11 @@ import { PROJECTS_ASSETS } from './ProjectsAssets';
 // const REF_OPTIONS = { triggerOnce: true };
 const REF_OPTIONS = {};
 
-const Projects: React.FC<{
+type ProjectProps = {
 	setHeaderText: React.Dispatch<React.SetStateAction<boolean>>;
-}> = ({ setHeaderText }) => {
+};
+
+const Projects = ({ setHeaderText }: ProjectProps) => {
 	const [projects, inViewProjects] = useInView();
 	const [projectsTitleRef, inViewTitle] = useInView(REF_OPTIONS);
 

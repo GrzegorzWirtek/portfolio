@@ -1,7 +1,9 @@
 import { useState } from 'react';
 import './Header.scss';
 
-const Header: React.FC<{ textVisible: boolean }> = ({ textVisible }) => {
+type HeaderProps = { textVisible: boolean };
+
+const Header = ({ textVisible }: HeaderProps) => {
 	const [loaded, setLoaded] = useState(false);
 
 	return (
