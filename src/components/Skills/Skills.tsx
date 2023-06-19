@@ -1,6 +1,6 @@
 import './Skills.scss';
 import { useInView } from 'react-intersection-observer';
-import { ICONS, SKILLS } from './SkillsAssets';
+import { SKILLS } from './SkillsAssets';
 
 const REF_OPTIONS = {};
 
@@ -8,13 +8,28 @@ const Skills = () => {
 	const [skillsRef, inView] = useInView(REF_OPTIONS);
 	const [skillTitleRef, inViewTitle] = useInView(REF_OPTIONS);
 
-	const skillsContent = SKILLS.map((item, index) => (
-		<div className={`skill ${inView ? 'skill--active' : ''}`} key={item}>
+	const skillsContent = SKILLS.map((item) => (
+		<div className='skill' key={item.title}>
 			<div className='skill__title'>
-				<img className='skill__title-icon' src={`${ICONS[index]}.svg`} alt='' />
-				<p className='skill__title-text'>{item}</p>
+				<img
+					className='skill__title-icon'
+					src={`${item.icon}.svg`}
+					alt={item.title}
+				/>
+				<p className='skill__title-text'>{item.title}</p>
 			</div>
-			<div className='skill__percentage'></div>
+			<div className='skill__percentage'>
+				<div
+					className='skill__percentage-fill'
+					style={
+						inView
+							? {
+									animation: `percentage 0.4s ${item.viewDelay}s forwards`,
+									right: `${100 - item.percentages}%`,
+							  }
+							: {}
+					}></div>
+			</div>
 		</div>
 	));
 

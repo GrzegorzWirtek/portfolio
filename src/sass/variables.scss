@@ -20,8 +20,8 @@ $color-10: #eeeef5;
 $color-11: #ced0d4;
 $color-12: #b9bbc0;
 $border-color: #543f32;
-$cubic-bazier: cubic-bezier(.2,.47,.54,.93);
-$j:#e4b69a;
+$cubic-bazier: cubic-bezier(0.2, 0.47, 0.54, 0.93);
+$j: #e4b69a;
 
 $main-color: rgb(65, 65, 65);
 
@@ -69,7 +69,6 @@ $font-size-xl: 3rem;
 $font-size-xxl: 3.8rem;
 $font-size-xxxl: 4.6rem;
 
-$skill-transition-time: 0.4s;
 $skill-percentage-height: 8px;
 $skill-percentage-height-l: 11px;
 
@@ -98,32 +97,32 @@ $btn-bcg-color-hover: rgba(0, 0, 0, 0.508);
 $btn-transition-time: 0.2s;
 
 @mixin header-title {
-    position: relative;
-    text-align: center;
-    font-size: 4.4rem;
-    margin-bottom: $magin-bottom-3;
-    font-family: $abril-font-family;
-    font-weight: 500;
-    transform: translateX(-140px);
-    opacity: 0;
-    transition: 0.3s 0.1s $cubic-bazier;
+	position: relative;
+	text-align: center;
+	font-size: 4.4rem;
+	margin-bottom: $magin-bottom-3;
+	font-family: $abril-font-family;
+	font-weight: 500;
+	transform: translateX(-140px);
+	opacity: 0;
+	transition: 0.3s 0.1s $cubic-bazier;
 
-    @media(min-width: $min-width){
-      font-size: 5rem;
-    }
+	@media (min-width: $min-width) {
+		font-size: 5rem;
+	}
 }
 
-@mixin header-title-active{
-  opacity: 1;
-  transform: translateX(0px);
+@mixin header-title-active {
+	opacity: 1;
+	transform: translateX(0px);
 }
 
 @keyframes percentage {
-  from{
-    transform: translateX(-100%);
-  }
+	from {
+		transform: translateX(-100%);
+	}
 
-to{
-    transform: translateX(0);
-  }
+	to {
+		transform: translateX(0);
+	}
 }
