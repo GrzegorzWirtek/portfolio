@@ -9,15 +9,14 @@ export type ProjectType = {
 
 export const PROJECTS_ASSETS: ProjectType[] = [
 	{
-		title:
-			'Sklep muzyczny, umożliwiający dodawanie i usuwanie produktów z poziomu admina (REST API)',
+		title: 'Internetowy sklep muzyczny',
 		subtitle:
-			'React.js | TypeScript | Sass/SCSS | Redux-Toolkit | MongoDB Atlas/Mongoose | Axios',
+			'TypeScript | Next.js 13 | Tailwind | MongoDB Atlas/Mongoose | Stripe',
 		description:
-			'Witrynę stworzyłem ćwicząc zastosowanie Redux-Toolkit oraz projektowanie związanej z nim architektury plików. Aplikacja, przy użyciu REST API, komunikuje się z prostym serwerem napisanym w Node.js/Express.js. Dane produktów, zdjęcia konwertowane na format base64 i dane logowania przechowywane są bazie MognoBD Atlas. Administrator posiadający dane logowania może dodawać i usuwać w sklepie produkty wraz ze zdjęciami. Produkty dodawane przez użytkownika do koszyka, przechowywane są w local storage, przy użyciu Redux-Persist. Całość kodu Reactowego napisałem w TypeScript i ostylowałem przy pomocy SCSS z zastosowaniem BEM.',
+			'Tę responsywną witrynę e-commerce utworzyłem w Next.js 13 z TypeScript, stylując przy użyciu Tailwind. Dane z MongoDB Atlas są pre-renderowane po stronie serwera i dostępne natychmiast po stronie klienta. Infinite scroll pozwala na stopniowe ładowanie i wyświetlanie produktów. Grafiki przechowywane są na uploadthing.com, a na stonie wyświeltane na moim autorskim sliderze. Sklep umożliwia przeglądanie i wyszukiwanie produktów oraz dodawanie ich do koszyka (local storage). Płatność za zakupy realizowana jest z użyciem Stripe (tryb testowy).',
 		imgUrl: 'musicstore',
-		pageUrl: 'https://grzegorzwirtek.github.io/music-store/',
-		githubUrl: 'https://github.com/GrzegorzWirtek/music-store',
+		pageUrl: 'https://next-music-store-seven.vercel.app/',
+		githubUrl: 'https://github.com/GrzegorzWirtek/next-music-store',
 	},
 	{
 		title: 'CMS dla strony Salonu fryzjerskiego (REST API)',
