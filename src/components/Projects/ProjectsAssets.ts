@@ -13,7 +13,7 @@ export const PROJECTS_ASSETS: ProjectType[] = [
 		subtitle:
 			'TypeScript | Next.js 13 | Tailwind | MongoDB Atlas/Mongoose | Stripe',
 		description:
-			'Tę responsywną witrynę e-commerce utworzyłem w Next.js 13 z TypeScript, stylując przy użyciu Tailwind. Dane z MongoDB Atlas są pre-renderowane po stronie serwera i dostępne natychmiast po stronie klienta. Infinite scroll pozwala na stopniowe ładowanie i wyświetlanie produktów. Grafiki przechowywane są na uploadthing.com, a na stonie wyświeltane na moim autorskim sliderze. Sklep umożliwia przeglądanie i wyszukiwanie produktów oraz dodawanie ich do koszyka (local storage). Płatność za zakupy realizowana jest z użyciem Stripe (tryb testowy).',
+			'Tę responsywną witrynę e-commerce utworzyłem w Next.js 13 z TypeScript, stylując przy użyciu Tailwind. Dane z MongoDB Atlas są w całości pre-renderowane po stronie serwera i dostępne natychmiast po stronie klienta. Infinite scroll pozwala na stopniowe ładowanie i wyświetlanie produktów. Grafiki przechowywane są na uploadthing.com, a na stonie wyświeltane na moim autorskim sliderze. Sklep umożliwia przeglądanie i wyszukiwanie produktów oraz dodawanie ich do koszyka (local storage). Płatność za zakupy realizowana jest z użyciem Stripe (tryb testowy).',
 		imgUrl: 'musicstore',
 		pageUrl: 'https://next-music-store-seven.vercel.app/',
 		githubUrl: 'https://github.com/GrzegorzWirtek/next-music-store',
