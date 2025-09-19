@@ -14,7 +14,7 @@ const About = () => {
 					O mnie
 				</h2>
 				<img
-					src='me.png'
+					src='me.jpg'
 					alt='Grzegorz Wirtek'
 					className={`about__image ${inView ? 'about__image--active' : ''}`}
 				/>
