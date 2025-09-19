@@ -13,20 +13,10 @@ export const PROJECTS_ASSETS: ProjectType[] = [
 		subtitle:
 			'TypeScript | Next.js 13 | Tailwind | MongoDB Atlas/Mongoose | Stripe',
 		description:
-			'Tę responsywną witrynę e-commerce utworzyłem w Next.js 13 z TypeScript, stylując przy użyciu Tailwind. Dane z MongoDB Atlas są w całości pre-renderowane po stronie serwera i dostępne natychmiast po stronie klienta. Infinite scroll pozwala na stopniowe ładowanie i wyświetlanie produktów. Grafiki przechowywane są na uploadthing.com, a na stonie wyświeltane na moim autorskim sliderze. Sklep umożliwia przeglądanie i wyszukiwanie produktów oraz dodawanie ich do koszyka (local storage). Płatność za zakupy realizowana jest z użyciem Stripe (tryb testowy).',
+			'Tę responsywną witrynę e-commerce utworzyłem w Next.js 13 z TypeScript, stylując przy użyciu Tailwind. Dane z MongoDB Atlas są częściowo pre-renderowane po stronie serwera i dostępne natychmiast po stronie klienta. Infinite scroll pozwala na stopniowe ładowanie i wyświetlanie produktów. Grafiki przechowywane są na uploadthing.com, a na stonie wyświeltane na moim autorskim sliderze. Sklep umożliwia przeglądanie i wyszukiwanie produktów oraz dodawanie ich do koszyka (local storage). Płatność za zakupy realizowana jest z użyciem Stripe (tryb testowy).',
 		imgUrl: 'musicstore',
 		pageUrl: 'https://next-music-store-seven.vercel.app/',
 		githubUrl: 'https://github.com/GrzegorzWirtek/next-music-store',
-	},
-	{
-		title: 'CMS dla strony Salonu fryzjerskiego (REST API)',
-		subtitle:
-			'React.js | TypeScript | Sass/SCSS | Redux | Firebase | MongoDB Atlas/Mongoose | Axios',
-		description:
-			'CMS to jedna z trzech części projektu w stacku MERN, na który składają się jeszcze frontend i backend salonu fryzjerskiego (dostępne na moim GitHubie). Projekt stworzyłem w celu ćwiczenia tworzenia architektury REST API przy użyciu React.js i TypeScript. Strona jest zaprojektowana przeze mnie, responsywna i wystylizowana w SCSS z użyciem metodologii BEM. Zawiera panel logowania oraz zestaw formularzy do edytowania treści i dodawania/usuwania fotografii na stronie salonu fryzjerskiego. Do obsługi stanu aplikacji wykorzystałem Redux. Fotografie przechowywane są w Firebase Storage, natomiast pozostałe treści w bazie MongoDB Atlas.',
-		imgUrl: 'hairsalon',
-		pageUrl: 'https://grzegorzwirtek.github.io/fryzjer-cms/',
-		githubUrl: 'https://github.com/GrzegorzWirtek/fryzjer-cms',
 	},
 	{
 		title: 'Gra Snake',
